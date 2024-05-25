@@ -1,0 +1,63 @@
+@use 'variables';
+
+.streaming {
+    padding: 10vw;
+    text-align: center;
+
+    &__links {
+        display: flex;
+        justify-content: space-around;
+        margin: 48px 0;
+
+        &__icon {
+            box-sizing: border-box;
+            width: 190px;
+            height: 224px;
+            box-shadow: 0px 10px 20px 2px variables.$colorWithAlpha;
+            border-radius: 17px;
+            cursor: pointer;
+            transition: all .3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            user-select: none;
+            
+            &:hover {
+                transform: scale(1.10);
+            }
+        }
+        
+        &__logo {
+            width: 180px;
+            height: 90px;
+        }   
+    }
+
+    @media (max-width: 768px) {
+        padding: 10vw 4vw;
+
+        &__links {
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            place-items: center;
+            row-gap: 28px;
+
+            &__icon {
+                width: 142px;
+                box-shadow: 0px 0px 12px 2px variables.$colorWithAlpha;
+            }
+
+            &__logo {
+                width: 140px;
+                height: 70px;
+            }
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        &__links {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

@@ -1,0 +1,104 @@
+@use 'variables';
+@use 'hero';
+@use 'movie-details';
+@use 'platforms';
+@use 'footer';
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Bold.woff2);
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Avenir, 'sans-serif';
+    list-style-type: none;
+    color: variables.$colorTextPrimary;
+}
+
+body {
+    background-color: variables.$backgroundColorPrimary;
+    
+}
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@mixin text($fontSize: 18px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variables.$colorTextPrimary;
+}
+
+@mixin title($fontSize: 26px) {
+    @include text($fontSize);
+    color: variables.$colorTextPrimary;
+    text-transform: uppercase
+}
+
+.text--big {
+    @include text(22px);
+
+    
+}
+
+.text {
+    @include text;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        @include text(26px)
+    }
+}
+
+.text--small {
+    @include text(14px);
+}
+
+.title--big {
+    @include title(32px);
+
+    
+    @media (max-width: 768px) {
+        @include title(20px)
+    }
+    
+    @media (min-width: 768px) and (max-width: 1024px) {
+        @include title(32px);
+    }
+}
+
+.title {
+    @include title;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        @include title(26px)
+    }
+}
+
+.title--small {
+    @include title(20px);
+
+    @media (max-width: 768px) {
+        @include title(18px)
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        @include title(22px)
+    }
+}
+
+
+
+

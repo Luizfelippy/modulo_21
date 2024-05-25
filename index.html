@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogador Nº1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/main.css">
+</head>
+<body>
+    <section class="hero">
+        <div class="hero__content">
+            <h1 class="hero__title title--big">
+                Uma aventura muito além do mundo real
+            </h1>
+            <img class="hero__logo-title" src="dist/images/logo.png" alt="Jogador número 1">
+            <a href="#streaming" class="button button--is-scroll text">Assista agora</a>
+        </div>
+    </section>
+    <section class="movie">
+        <div class="container">
+            <nav class="movie__tabs">
+                <button data-tab-button="sinopse" class="movie__tabs__button movie__tabs__button--is-active text">
+                    Sinopse
+                </button>
+                <button data-tab-button="atores" class="movie__tabs__button text">
+                    Atores
+                </button>
+                <button data-tab-button="trailer" class="movie__tabs__button text">
+                    Trailer
+                </button>
+            </nav>
+            <div data-tab-id="sinopse" class="movie__info movie__info--is-active">
+                <img class="movie__info__poster" src="dist/images/sinopse.jpg" alt="Cartaz jogador Nº1">
+                <p class="text">
+                    Em um futuro distópico, a Terra está devastada e superpovoada. 
+                    A humanidade busca refúgio no OASIS,um vasto mundo virtual de realidade 
+                    virtual criado pelo brilhante e excêntrico James Halliday (interpretado por Mark Rylance).
+                    Após a morte de Halliday, é revelado que ele escondeu um easter egg dentro do OASIS, 
+                    prometendo sua fortuna e controle do OASIS ao jogador que encontrar as três chaves escondidas.
+                </p>
+            </div>
+            <div data-tab-id="atores" class="movie__info">
+                <ul class="movie__info__list">
+                    <li class="movie__info__list__item">
+                        <img src="dist/images/atores/ator_1.jpeg" alt="Tye Sheridan">
+                        <h3 class="title--small">
+                            Tye Sheridan
+                        </h3>
+                        <span class="text--small">
+                            Personagem : Parzival / Wade
+                        </span>
+                    </li>
+                    <li class="movie__info__list__item">
+                        <img src="dist/images/atores/ator_2.jpeg" alt="Olivia Cooke">
+                        <h3 class="title--small">
+                            Olivia Cooke
+                        </h3>
+                        <span class="text--small">
+                            Personagem : Art3mis / Samantha
+                        </span>
+                    </li>
+                    <li class="movie__info__list__item">
+                        <img src="dist/images/atores/ator_3.jpeg" alt="Ben Mendelsohn">
+                        <h3 class="title--small">
+                            Ben Mendelsohn
+                        </h3>
+                        <span class="text--small">
+                            Personagem : Sorrento
+                        </span>
+                    </li>
+                    <li class="movie__info__list__item">
+                        <img src="dist/images/atores/ator_4.jpeg" alt="Lena Waithe">
+                        <h3 class="title--small">
+                            Lena Waithe
+                        </h3>
+                        <span class="text--small">
+                            Personagem : Aech / Helen
+                        </span>
+                    </li>
+                    <li class="movie__info__list__item">
+                        <img src="dist/images/atores/ator_5.jpeg" alt="Simon Pegg">
+                        <h3 class="title--small">
+                            Simon Pegg
+                        </h3>
+                        <span class="text--small">
+                            Personagem : Ogden Morrow
+                        </span>
+                    </li>
+                    <li class="movie__info__list__item">
+                        <img src="dist/images/atores/ator_6.jpeg" alt="Mark Rylance">
+                        <h3 class="title--small">
+                            Mark Rylance
+                        </h3>
+                        <span class="text--small">
+                            Personagem : Anorak / Halliday
+                        </span>
+                    </li>
+                    <li class="movie__info__list__item">
+                        <img src="dist/images/atores/ator_7.jpeg" alt="T.J. Miller">
+                        <h3 class="title--small">
+                            T.J. Miller
+                        </h3>
+                        <span class="text--small">
+                            Personagem : i-R0k
+                        </span>
+                    </li>
+                    <li class="movie__info__list__item">
+                        <img src="dist/images/atores/ator_8.jpeg" alt="Hannah John-Kamen">
+                        <h3 class="title--small">
+                            Hannah John-Kamen
+                        </h3>
+                        <span class="text--small">
+                            Personagem : F'Nale Zandor
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div data-tab-id="trailer" class="movie__info">
+                <video class="movie__info__midia" controls src="./src/midia/JOGADOR Nº 1 _ Trailer (2018) Dublado HD.mp4"></video>
+            </div>
+        </div>
+    </section>
+    <section id="streaming" class="streaming">
+        <h2 class="title">Plataformas de streaming Disponíveis Para Assistir</h2>
+        <div class="container">
+            <ul class="streaming__links">
+                <li class="streaming__links__item">
+                    <a class="streaming__links__icon" href="https://www.primevideo.com/">
+                        <img class="streaming__links__logo" src="./dist/images/plataformas_filmes/logo_prime_video.png" alt="Logo amazon prime video">
+                    </a>
+                </li>
+                <li class="streaming__links__item">
+                    <a class="streaming__links__icon" href="https://www.netflix.com/br/">
+                        <img class="streaming__links__logo" src="./dist/images/plataformas_filmes/logo_netflix.png" alt="Logo netflix">
+                    </a>
+                </li>
+                <li class="streaming__links__item">
+                    <a class="streaming__links__icon" href="https://www.disneyplus.com/pt-br">
+                        <img class="streaming__links__logo" src="./dist/images/plataformas_filmes/logo_telecine.png" alt="Loogo telecine">
+                    </a>
+                </li>
+                <li class="streaming__links__item">
+                    <a class="streaming__links__icon" href="https://www.max.com/br/pt">
+                        <img class="streaming__links__logo" src="./dist/images/plataformas_filmes/logo_hbomax.png" alt="Logo hbomax">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <div class="language-selector">
+                        <img src="./dist/images/icones/globe.svg" alt="Globo do mundo">
+                        <select>
+                            <option>English</option>
+                            <option selected>Portugês</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Termos e Condições de Uso</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Política de privacidade</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Proteção de Dados no Brasil</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Anúncios personalizados</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Dispositivos compatíveis</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Ajuda</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Sobre o site</a>
+                </li>
+            </ul>
+            <p class="text--small">
+                ® 2024 Todos os direitos reservados. Conteúdo sujeito a disponibilidade.
+            </p>
+        </div>
+    </footer>
+
+    <script src="./dist/js/main.js"></script>
+</body>
+</html>
